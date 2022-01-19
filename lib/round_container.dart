@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class roundContainer extends StatelessWidget {
-  const roundContainer({Key? key}) : super(key: key);
+class RoundContainer extends StatelessWidget {
+  const RoundContainer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 19),
+      padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 19.0),
       width: 50.0,
       height: 50.0,
       decoration: BoxDecoration(
@@ -16,15 +16,16 @@ class roundContainer extends StatelessWidget {
           color: Colors.black,
           width: 2.5,
         ),
-      boxShadow: [
-      BoxShadow(
-        color: Colors.grey,
-        spreadRadius: 11,
-        blurRadius: 20,
-        offset: Offset(3, 7), 
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.grey,
+            spreadRadius: 11,
+            blurRadius: 20,
+            offset: Offset(3, 7),
+          ),
+        ],
       ),
-    ],),
-      child: Text(
+      child: const Text(
         'A',
         style: TextStyle(
           fontSize: 12.0,
