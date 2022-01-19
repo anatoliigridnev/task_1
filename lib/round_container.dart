@@ -6,7 +6,7 @@ class RoundContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 19.0),
+      alignment: Alignment.center,
       width: 50.0,
       height: 50.0,
       decoration: BoxDecoration(
